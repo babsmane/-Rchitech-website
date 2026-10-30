@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | @rchitech</title>
+  <meta name="description" content="Contactez @rchitech pour échanger sur votre projet numérique.">
+  <meta name="theme-color" content="#052B5B">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="@rchitech">
+  <meta property="og:title" content="Contact | @rchitech">
+  <meta property="og:description" content="Contactez @rchitech pour échanger sur votre projet numérique.">
+  <link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <button class="sidebar-toggle" type="button" aria-label="Ouvrir ou fermer le menu" aria-controls="site-sidebar" aria-expanded="true"><i class="fa-solid fa-bars"></i></button>
+
+  <aside class="sidebar" id="site-sidebar">
+    <a class="brand" href="index.html"><img class="brand-mark" src="images/brand-icon.png" alt="" width="44" height="44"><span><strong>@rchitech</strong><small>De l’analyse au déploiement</small></span></a>
+    <div class="sidebar-label">EXPERTISES</div>
+    <nav class="side-nav" aria-label="Navigation principale">
+        <a href="index.html"><i class="fa-solid fa-house"></i><span>Accueil</span></a>
+        <a href="conseil.html"><i class="fa-solid fa-compass"></i><span>Audit & conseil</span></a>
+        <a href="web-mobile.html"><i class="fa-solid fa-code"></i><span>Développement</span></a>
+        <a href="integration.html"><i class="fa-solid fa-puzzle-piece"></i><span>Intégration de solutions</span></a>
+        <a href="cloud-devops.html"><i class="fa-solid fa-cloud"></i><span>Cloud & DevOps</span></a>
+        <a href="cybersecurite.html"><i class="fa-solid fa-shield-halved"></i><span>Cybersécurité</span></a>
+        <a href="gestion-projets.html"><i class="fa-solid fa-list-check"></i><span>Gestion de projets</span></a>
+        <a href="blockchain-formation.html"><i class="fa-solid fa-link"></i><span>Blockchain & formation</span></a>
+        <a href="contact.html" class="active" aria-current="page"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Conseil & ingénierie numérique
+      <a class="sidebar-contact" href="contact.html#formulaire">Parlons de votre projet <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-scrim"></div>
+
+  <div class="site-shell">
+    <header class="topbar"><span>Conseil & ingénierie numérique</span><a href="contact.html#formulaire">Parler à un expert <i class="fa-solid fa-arrow-up-right-from-square"></i></a></header>
+    <main id="contenu">
+      <section class="hero">
+        <h1>Contactez-nous</h1>
+        <p>Échangeons sur vos projets et besoins en technologies de l'information</p>
+      </section>
+      <section id="formulaire">
+        <h2>Parlons de votre projet</h2>
+        <p class="section-intro">Décrivez votre besoin en quelques lignes : nous revenons vers vous rapidement.</p>
+        <form class="contact-form" data-mailto="contact@architech.fr" id="contact-form"> <div class="form-grid"> <div class="form-group"><label for="name">Nom <span aria-hidden="true" class="req">*</span></label><input autocomplete="name" id="name" name="name" required="" type="text"/></div> <div class="form-group"><label for="email">Email <span aria-hidden="true" class="req">*</span></label><input autocomplete="email" id="email" name="email" required="" type="email"/></div> <div class="form-group form-group--full"><label for="service">Service souhaité <span aria-hidden="true" class="req">*</span></label><select id="service" name="service" required=""><option value="">Choisir un service</option><option value="conseil">Audit &amp; conseil</option><option value="web-mobile">Développement web &amp; mobile</option><option value="integration">Intégration de solutions</option><option value="cloud-devops">Cloud &amp; DevOps</option><option value="cybersecurite">Cybersécurité &amp; audit</option><option value="gestion-projets">Gestion de projets IT</option><option value="blockchain">Blockchain &amp; crypto-actifs</option><option value="formation">Formation en entreprise</option><option value="autre">Autre demande</option></select></div> <div class="form-group form-group--full"><label for="message">Message <span aria-hidden="true" class="req">*</span></label><textarea id="message" name="message" required=""></textarea></div> </div> <div class="form-actions"><button class="cta-button" type="submit">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button><p aria-live="polite" class="form-status" id="form-status" role="status"></p></div> </form>
+        <div id="form-success" class="form-success" role="status" tabindex="-1" hidden="">
+          <h3>Merci pour votre message</h3>
+          <p id="form-success-text"></p>
+          <button class="cta-button" id="form-reset" type="button">Envoyer un autre message</button>
+        </div>
+      </section>
+      <section>
+        <h2>Nos coordonnées</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Contact général</h3>
+            <p><a href="mailto:contact@architech.fr">contact@architech.fr</a></p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>Demande commerciale</h3>
+            <p><a href="mailto:commercial@architech.fr">commercial@architech.fr</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer"><img class="footer-logo" src="images/logo.png" alt="@rchitech — De l’analyse au déploiement" width="139" height="36"><p>© 2026 @rchitech · De l’analyse au déploiement</p></footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
+</body>
+</html>
