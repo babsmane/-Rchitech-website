@@ -1,0 +1,99 @@
+/* ==========================================================
+   components.css — blocs réutilisables : bandeau d'accueil,
+   cartes, boutons, listes, étapes, encarts
+   ========================================================== */
+
+/* --- Bandeau d'accueil (hero) --- */
+section.hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  min-height: 300px; padding: clamp(34px, 5vw, 66px);
+  border: 0; box-shadow: 0 18px 50px #052b5b24;
+  /* illustration sans texte à droite, dégradé marine net derrière (chemin relatif à css/) */
+  background:
+    url("../images/hero-art.webp") right center / auto 100% no-repeat,
+    linear-gradient(110deg, var(--navy-deep) 0%, var(--navy) 55%, #06477b 100%);
+  color: #fff;
+}
+.hero h1 {
+  max-width: 800px; margin: 9px 0 18px; padding: 0; border: 0;
+  color: #fff; font-size: clamp(30px, 4vw, 49px); line-height: 1.12; letter-spacing: -1.3px;
+}
+.hero p { max-width: 760px; margin: 0 0 14px; color: #dbeaf8; font-size: clamp(15px, 1.5vw, 18px); }
+.hero .eyebrow { color: var(--cyan); font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+
+.section-intro { max-width: 850px; font-size: 16px; }
+
+/* --- Grille de cartes --- */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr)); gap: 18px; }
+
+.service-card {
+  padding: 24px;
+  border: 1px solid var(--line); border-radius: 16px;
+  background: linear-gradient(180deg, #fff, #fbfdff); box-shadow: 0 8px 25px #0b31510a;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.service-card:hover { transform: translateY(-4px); border-color: #a5eaff; box-shadow: 0 14px 30px #052b5b12; }
+.service-card p { font-size: 14px; }
+.service-card a { color: #008fbd; font-size: 13px; font-weight: 800; text-decoration: none; }
+
+.service-icon {
+  display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 17px;
+  border-radius: 14px; background: #e5faff; color: #007ca8; font-size: 21px;
+}
+
+/* --- Boutons --- */
+.cta-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 13px 20px; border: 0; border-radius: 10px;
+  background: var(--cyan); color: var(--navy);
+  box-shadow: 0 8px 18px #00c8ff25;
+  font: inherit; font-weight: 800; text-decoration: none; cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+.cta-button:hover { background: #55dcff; transform: translateY(-2px); }
+
+/* --- Listes à coches --- */
+.feature-list { margin: 1.5rem 0; padding: 0; list-style: none; }
+.feature-list li { position: relative; padding: 8px 0 8px 28px; border-bottom: 1px solid #eef2f7; }
+.feature-list li:last-child { border-bottom: 0; }
+.feature-list li::before { content: "✓"; position: absolute; top: 8px; left: 2px; color: var(--accent); font-weight: 900; }
+
+/* --- Pastilles technologiques --- */
+.tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.tech-item { padding: 1.5rem; border: 1px solid var(--line); border-radius: 15px; background: #fff; box-shadow: 0 8px 24px #052b5b0a; text-align: center; }
+.tech-item p { margin: 0; }
+.tech-icon {
+  display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; margin: 0 auto 1rem;
+  border-radius: 50%; background: #e6f9ff; color: #007da7; font-size: 1.2rem; font-weight: 700;
+}
+
+/* --- Étapes de méthode --- */
+.process-steps { display: grid; gap: 16px; margin-top: 2rem; }
+.step { display: flex; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #f8fbff; }
+.step-number {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 34px; height: 34px; margin-right: 1rem; border-radius: 50%;
+  background: var(--navy); color: var(--cyan); font-weight: 800;
+}
+.step-content { flex-grow: 1; }
+.step-content h4 { margin: 0 0 .5rem; }
+.step-content p { margin-bottom: 0; }
+
+/* --- Encart d'information et bandeau d'appel à l'action --- */
+.note { padding: 14px 17px; border-left: 3px solid var(--cyan); border-radius: 8px; background: #f0faff; font-size: 13px; }
+
+section.cta-panel { border: 0; background: linear-gradient(130deg, var(--navy), #07548a); color: #fff; }
+.cta-panel h2 { border-bottom-color: #ffffff33; color: #fff; }
+.cta-panel p  { color: #e3f0fb; }
+
+@media (max-width: 800px) {
+  section.hero {
+    min-height: 280px; padding: 28px 23px;
+    background:
+      linear-gradient(180deg, #031b3bcc, #031b3baa),   /* voile : garde le texte lisible sur l'illustration */
+      url("../images/hero-art.webp") right bottom / auto 80% no-repeat,
+      linear-gradient(110deg, var(--navy-deep) 0%, var(--navy) 55%, #06477b 100%);
+  }
+  .hero h1 { font-size: 32px; }
+}

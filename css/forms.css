@@ -1,0 +1,39 @@
+/* ==========================================================
+   forms.css — formulaire de contact (chargé sur contact.html)
+   ========================================================== */
+#formulaire { scroll-margin-top: 20px; }
+
+.contact-form { padding: 2rem; border: 1px solid var(--line); border-radius: 15px; background: #fff; box-shadow: 0 8px 24px #052b5b0a; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group--full { grid-column: 1 / -1; }
+
+.form-group label { display: block; margin-bottom: .4rem; color: var(--navy); font-size: 14px; font-weight: 600; }
+.form-group .req { color: #c0392b; }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 12px;
+  border: 1px solid #d5e0ec; border-radius: 9px; background: #fbfdff;
+  color: var(--ink); font: inherit;
+}
+.form-group textarea { min-height: 150px; resize: vertical; }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: #00a9d7; outline: 2px solid #9beaff; }
+.form-group input:user-invalid,
+.form-group textarea:user-invalid { border-color: #d92d20; }
+
+.form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.form-status { margin: 0; font-size: 14px; }
+.form-status.is-error { color: #b42318; }
+
+.form-success { padding: 2rem; border-left: 4px solid #4be2ae; border-radius: 12px; background: #effcf7; }
+.form-success h3 { margin-bottom: 8px; }
+.form-success:focus { outline: none; }
+
+@media (max-width: 800px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 1.25rem; }
+}

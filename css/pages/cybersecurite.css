@@ -1,0 +1,16 @@
+/* ==========================================================
+   pages/cybersecurite.css — jauges de niveau (page cybersécurité)
+   ========================================================== */
+.security-level { display: flex; align-items: center; gap: 1rem; margin: 1rem 0; }
+.security-level > span { flex: 0 0 180px; font-weight: 600; color: var(--navy); }
+.security-meter { flex: 1; height: 8px; overflow: hidden; border-radius: 4px; background: #e0e6ee; }
+.security-fill { height: 100%; border-radius: 4px; background: var(--cyan); }
+.security-fill--high   { width: 90%; }
+.security-fill--medium { width: 65%; }
+.security-fill--low    { width: 35%; }
+
+@media (max-width: 800px) {
+  .security-level { flex-wrap: wrap; gap: .4rem; }
+  .security-level > span,
+  .security-meter { flex-basis: 100%; }
+}

@@ -1,0 +1,47 @@
+/* ==========================================================
+   base.css — variables, reset, typographie
+   ========================================================== */
+:root {
+  --navy: #052B5B;
+  --navy-deep: #031b3b;
+  --cyan: #00C8FF;
+  --ink: #17283f;
+  --text: #53647a;
+  --muted: #64748b;
+  --paper: #f4f7fb;
+  --line: #e2eaf3;
+  --accent: #009fc9;
+  --sidebar-width: 286px;
+  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  line-height: 1.7;
+}
+
+h2 {
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.25;
+  letter-spacing: -.5px;
+}
+h3 { margin-bottom: 11px; color: var(--navy); font-size: 18px; line-height: 1.35; }
+h4 { color: var(--navy); }
+p  { margin-bottom: 14px; color: var(--text); }
+
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}

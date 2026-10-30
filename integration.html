@@ -1,161 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Rchitech - Technologies & Services de l'Information</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intégration de solutions | @rchitech</title>
+  <meta name="description" content="EAI, API, ETL et messaging : connectez vos systèmes d'information.">
+  <meta name="theme-color" content="#052B5B">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="@rchitech">
+  <meta property="og:title" content="Intégration de solutions | @rchitech">
+  <meta property="og:description" content="EAI, API, ETL et messaging : connectez vos systèmes d'information.">
+  <link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-    <header>
-        <h1>@Rchitech</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="web-mobile.html">Développement Web & Mobile</a></li>
-                <li><a href="conseil.html">Conseil en Transformation Digitale</a></li>
-                <li><a href="gestion-projets.html">Gestion de Projets IT</a></li>
-                <li><a href="integration.html">Intégration de Solutions Logiciels</a></li>
-                <li><a href="cloud-devops.html">Infrastructure Cloud & DevOps</a></li>
-                <li><a href="cybersecurite.html">Cybersécurité & Audit</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="hero">
-            <h2>Connecter vos systèmes, optimiser vos processus</h2>
-            <p>Des solutions d'intégration sur mesure pour unifier votre écosystème informatique</p>
-            <a href="contact.html" class="cta-button">Demander un audit</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <button class="sidebar-toggle" type="button" aria-label="Ouvrir ou fermer le menu" aria-controls="site-sidebar" aria-expanded="true"><i class="fa-solid fa-bars"></i></button>
+
+  <aside class="sidebar" id="site-sidebar">
+    <a class="brand" href="index.html"><img class="brand-mark" src="images/brand-icon.png" alt="" width="44" height="44"><span><strong>@rchitech</strong><small>De l’analyse au déploiement</small></span></a>
+    <div class="sidebar-label">EXPERTISES</div>
+    <nav class="side-nav" aria-label="Navigation principale">
+        <a href="index.html"><i class="fa-solid fa-house"></i><span>Accueil</span></a>
+        <a href="conseil.html"><i class="fa-solid fa-compass"></i><span>Audit & conseil</span></a>
+        <a href="web-mobile.html"><i class="fa-solid fa-code"></i><span>Développement</span></a>
+        <a href="integration.html" class="active" aria-current="page"><i class="fa-solid fa-puzzle-piece"></i><span>Intégration de solutions</span></a>
+        <a href="cloud-devops.html"><i class="fa-solid fa-cloud"></i><span>Cloud & DevOps</span></a>
+        <a href="cybersecurite.html"><i class="fa-solid fa-shield-halved"></i><span>Cybersécurité</span></a>
+        <a href="gestion-projets.html"><i class="fa-solid fa-list-check"></i><span>Gestion de projets</span></a>
+        <a href="blockchain-formation.html"><i class="fa-solid fa-link"></i><span>Blockchain & formation</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Conseil & ingénierie numérique
+      <a class="sidebar-contact" href="contact.html#formulaire">Parlons de votre projet <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-scrim"></div>
+
+  <div class="site-shell">
+    <header class="topbar"><span>Conseil & ingénierie numérique</span><a href="contact.html#formulaire">Parler à un expert <i class="fa-solid fa-arrow-up-right-from-square"></i></a></header>
+    <main id="contenu">
+      <section class="hero">
+        <h1>Connecter vos systèmes, optimiser vos processus</h1>
+        <p>Des solutions d'intégration sur mesure pour unifier votre écosystème informatique</p>
+      </section>
+      <section>
+        <h2>Nos Services d'Intégration de Systèmes</h2>
+        <p>Nous proposons des services complets d'intégration pour connecter et harmoniser vos différents systèmes d'information et applications métiers.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>Intégration d'Applications d'Entreprise (EAI)</h3>
+            <p>Nous mettons en place des solutions EAI permettant l'échange de données entre vos applications hétérogènes, assurant une communication fluide et une cohérence des informations à travers votre organisation.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+            <h3>APIs et Microservices</h3>
+            <p>Conception, développement et gestion d'APIs RESTful et de microservices pour créer des architectures modulaires, évolutives et faciles à maintenir, facilitant l'intégration avec des systèmes internes et externes.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Intégration de Données</h3>
+            <p>Solutions ETL (Extract, Transform, Load) et ELT pour migrer, synchroniser et consolider vos données entre différentes sources et destinations, garantissant leur qualité et leur cohérence.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>ESB et Messaging</h3>
+            <p>Implémentation de bus de services d'entreprise (ESB) et de solutions de messaging pour orchestrer vos processus métiers et assurer une communication asynchrone fiable entre vos applications.</p>
+          </div>
         </div>
-        
-        <section>
-            <h2>Nos Services d'Intégration de Systèmes</h2>
-            <p>Nous proposons des services complets d'intégration pour connecter et harmoniser vos différents systèmes d'information et applications métiers.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>Intégration d'Applications d'Entreprise (EAI)</h3>
-                    <p>Nous mettons en place des solutions EAI permettant l'échange de données entre vos applications hétérogènes, assurant une communication fluide et une cohérence des informations à travers votre organisation.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🔌</div>
-                    <h3>APIs et Microservices</h3>
-                    <p>Conception, développement et gestion d'APIs RESTful et de microservices pour créer des architectures modulaires, évolutives et faciles à maintenir, facilitant l'intégration avec des systèmes internes et externes.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Intégration de Données</h3>
-                    <p>Solutions ETL (Extract, Transform, Load) et ELT pour migrer, synchroniser et consolider vos données entre différentes sources et destinations, garantissant leur qualité et leur cohérence.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🚌</div>
-                    <h3>ESB et Messaging</h3>
-                    <p>Implémentation de bus de services d'entreprise (ESB) et de solutions de messaging pour orchestrer vos processus métiers et assurer une communication asynchrone fiable entre vos applications.</p>
-                </div>
+      </section>
+      <section>
+        <h2>Technologies d'Intégration</h2>
+        <p>Notre expertise couvre un large éventail de technologies d'intégration :</p>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">API</div>
+            <p>API Management</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">ESB</div>
+            <p>Enterprise Service Bus</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">ETL</div>
+            <p>ETL Tools</p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">MQ</div>
+            <p>Message Queuing</p>
+          </div>
+        </div>
+        <h3>Solutions partenaires</h3>
+        <p>Nous travaillons avec les solutions leaders du marché, notamment :</p>
+        <ul class="feature-list">
+          <li>MuleSoft Anypoint Platform</li>
+          <li>Apache Camel</li>
+          <li>IBM Integration Bus</li>
+          <li>Microsoft BizTalk Server</li>
+          <li>Talend Data Integration</li>
+          <li>Informatica PowerCenter</li>
+          <li>RabbitMQ</li>
+          <li>Apache Kafka</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Notre Approche d'Intégration</h2>
+        <p>Notre méthodologie d'intégration se déroule en plusieurs phases :</p>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Analyse</h4>
+              <p>Étude approfondie des systèmes existants et des besoins d'intégration</p>
             </div>
-        </section>
-        
-        <section>
-            <h2>Technologies d'Intégration</h2>
-            <p>Notre expertise couvre un large éventail de technologies d'intégration :</p>
-            
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <div class="tech-icon">API</div>
-                    <p>API Management</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">ESB</div>
-                    <p>Enterprise Service Bus</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">ETL</div>
-                    <p>ETL Tools</p>
-                </div>
-                <div class="tech-item">
-                    <div class="tech-icon">MQ</div>
-                    <p>Message Queuing</p>
-                </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Conception</h4>
+              <p>Élaboration d'une architecture d'intégration adaptée à vos besoins</p>
             </div>
-            
-            <h3>Solutions partenaires</h3>
-            <p>Nous travaillons avec les solutions leaders du marché, notamment :</p>
-            <ul class="feature-list">
-                <li>MuleSoft Anypoint Platform</li>
-                <li>Apache Camel</li>
-                <li>IBM Integration Bus</li>
-                <li>Microsoft BizTalk Server</li>
-                <li>Talend Data Integration</li>
-                <li>Informatica PowerCenter</li>
-                <li>RabbitMQ</li>
-                <li>Apache Kafka</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Notre Approche d'Intégration</h2>
-            <p>Notre méthodologie d'intégration se déroule en plusieurs phases :</p>
-            
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4>Analyse</h4>
-                        <p>Étude approfondie des systèmes existants et des besoins d'intégration</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4>Conception</h4>
-                        <p>Élaboration d'une architecture d'intégration adaptée à vos besoins</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h4>Développement</h4>
-                        <p>Création des connecteurs et des interfaces nécessaires</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4>Tests</h4>
-                        <p>Validation rigoureuse pour garantir la fiabilité des échanges</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h4>Déploiement</h4>
-                        <p>Mise en production progressive et contrôlée</p>
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">6</div>
-                    <div class="step-content">
-                        <h4>Monitoring</h4>
-                        <p>Surveillance continue et optimisation des performances</p>
-                    </div>
-                </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Développement</h4>
+              <p>Création des connecteurs et des interfaces nécessaires</p>
             </div>
-        </section>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Tests</h4>
+              <p>Validation rigoureuse pour garantir la fiabilité des échanges</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4>Déploiement</h4>
+              <p>Mise en production progressive et contrôlée</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4>Monitoring</h4>
+              <p>Surveillance continue et optimisation des performances</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-panel">
+        <h2>Un projet d'intégration ?</h2>
+        <p>Parlons des systèmes à connecter et de vos priorités.</p>
+        <a class="cta-button" href="contact.html?service=integration#formulaire">Demander un audit</a>
+      </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 @Rchitech - Tous droits réservés.</p>
-    </footer>
+  </div>
+
+  <footer class="site-footer"><img class="footer-logo" src="images/logo.png" alt="@rchitech — De l’analyse au déploiement" width="139" height="36"><p>© 2026 @rchitech · De l’analyse au déploiement</p></footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

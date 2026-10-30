@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Rchitech - Technologies & Services de l'Information</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de projets IT | @rchitech</title>
+  <meta name="description" content="Pilotage de projets informatiques en méthodes agiles ou traditionnelles.">
+  <meta name="theme-color" content="#052B5B">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="@rchitech">
+  <meta property="og:title" content="Gestion de projets IT | @rchitech">
+  <meta property="og:description" content="Pilotage de projets informatiques en méthodes agiles ou traditionnelles.">
+  <link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-    <header>
-        <h1>@Rchitech</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="web-mobile.html">Développement Web & Mobile</a></li>
-                <li><a href="conseil.html">Conseil en Transformation Digitale</a></li>
-                <li><a href="gestion-projets.html">Gestion de Projets IT</a></li>
-                <li><a href="integration.html">Intégration de Solutions Logiciels</a></li>
-                <li><a href="cloud-devops.html">Infrastructure Cloud & DevOps</a></li>
-                <li><a href="cybersecurite.html">Cybersécurité & Audit</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="hero">
-            <h2>Expertise en Gestion de Projets</h2>
-            <p>Des solutions adaptées à vos besoins pour le succès de vos initiatives technologiques</p>
-            <a href="contact.html" class="cta-button">Nous contacter</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <button class="sidebar-toggle" type="button" aria-label="Ouvrir ou fermer le menu" aria-controls="site-sidebar" aria-expanded="true"><i class="fa-solid fa-bars"></i></button>
+
+  <aside class="sidebar" id="site-sidebar">
+    <a class="brand" href="index.html"><img class="brand-mark" src="images/brand-icon.png" alt="" width="44" height="44"><span><strong>@rchitech</strong><small>De l’analyse au déploiement</small></span></a>
+    <div class="sidebar-label">EXPERTISES</div>
+    <nav class="side-nav" aria-label="Navigation principale">
+        <a href="index.html"><i class="fa-solid fa-house"></i><span>Accueil</span></a>
+        <a href="conseil.html"><i class="fa-solid fa-compass"></i><span>Audit & conseil</span></a>
+        <a href="web-mobile.html"><i class="fa-solid fa-code"></i><span>Développement</span></a>
+        <a href="integration.html"><i class="fa-solid fa-puzzle-piece"></i><span>Intégration de solutions</span></a>
+        <a href="cloud-devops.html"><i class="fa-solid fa-cloud"></i><span>Cloud & DevOps</span></a>
+        <a href="cybersecurite.html"><i class="fa-solid fa-shield-halved"></i><span>Cybersécurité</span></a>
+        <a href="gestion-projets.html" class="active" aria-current="page"><i class="fa-solid fa-list-check"></i><span>Gestion de projets</span></a>
+        <a href="blockchain-formation.html"><i class="fa-solid fa-link"></i><span>Blockchain & formation</span></a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Conseil & ingénierie numérique
+      <a class="sidebar-contact" href="contact.html#formulaire">Parlons de votre projet <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </aside>
+  <div class="sidebar-scrim"></div>
+
+  <div class="site-shell">
+    <header class="topbar"><span>Conseil & ingénierie numérique</span><a href="contact.html#formulaire">Parler à un expert <i class="fa-solid fa-arrow-up-right-from-square"></i></a></header>
+    <main id="contenu">
+      <section class="hero">
+        <h1>Expertise en Gestion de Projets</h1>
+        <p>Des solutions adaptées à vos besoins pour le succès de vos initiatives technologiques</p>
+      </section>
+      <section>
+        <h2>Nos Services de Gestion de Projets</h2>
+        <p>Notre équipe expérimentée propose des services complets de gestion de projets informatiques pour garantir la réussite de vos initiatives technologiques.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>Méthodologies Agiles</h3>
+            <p>Nous utilisons les méthodologies Agiles (Scrum, Kanban, SAFe) pour une gestion flexible et efficace de vos projets, permettant des ajustements rapides et une livraison continue de valeur.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Gestion de Projets Traditionnelle</h3>
+            <p>Pour les projets nécessitant une approche structurée, nous offrons une gestion de projets traditionnelle basée sur les méthodologies PRINCE2 et PMI, avec une planification détaillée et un suivi rigoureux.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Accompagnement PMO</h3>
+            <p>Notre Project Management Office (PMO) vous accompagne dans la définition et l'implémentation de processus standardisés, le suivi des portefeuilles de projets et la gouvernance informatique.</p>
+          </div>
         </div>
-        
-        <section>
-            <h2>Nos Services de Gestion de Projets</h2>
-            <p>Notre équipe expérimentée propose des services complets de gestion de projets informatiques pour garantir la réussite de vos initiatives technologiques.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>Méthodologies Agiles</h3>
-                    <p>Nous utilisons les méthodologies Agiles (Scrum, Kanban, SAFe) pour une gestion flexible et efficace de vos projets, permettant des ajustements rapides et une livraison continue de valeur.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Gestion de Projets Traditionnelle</h3>
-                    <p>Pour les projets nécessitant une approche structurée, nous offrons une gestion de projets traditionnelle basée sur les méthodologies PRINCE2 et PMI, avec une planification détaillée et un suivi rigoureux.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Accompagnement PMO</h3>
-                    <p>Notre Project Management Office (PMO) vous accompagne dans la définition et l'implémentation de processus standardisés, le suivi des portefeuilles de projets et la gouvernance informatique.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Notre Approche</h2>
-            <p>Nous adaptons notre approche à vos besoins spécifiques et à la nature de chaque projet :</p>
-            <ul class="feature-list">
-                <li>Analyse initiale et définition des objectifs</li>
-                <li>Planification détaillée des ressources et du calendrier</li>
-                <li>Suivi continu et reporting transparent</li>
-                <li>Gestion proactive des risques et des problèmes</li>
-                <li>Communication claire avec toutes les parties prenantes</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Nos Certifications</h2>
-            <p>Notre équipe dispose de nombreuses certifications reconnues dans le domaine de la gestion de projets :</p>
-            <ul class="feature-list">
-                <li>PMP (Project Management Professional)</li>
-                <li>PRINCE2 Practitioner</li>
-                <li>Professional Scrum Master (PSM)</li>
-                <li>SAFe Program Consultant (SPC)</li>
-                <li>ITIL Foundation</li>
-            </ul>
-        </section>
+      </section>
+      <section>
+        <h2>Notre Approche</h2>
+        <p>Nous adaptons notre approche à vos besoins spécifiques et à la nature de chaque projet :</p>
+        <ul class="feature-list">
+          <li>Analyse initiale et définition des objectifs</li>
+          <li>Planification détaillée des ressources et du calendrier</li>
+          <li>Suivi continu et reporting transparent</li>
+          <li>Gestion proactive des risques et des problèmes</li>
+          <li>Communication claire avec toutes les parties prenantes</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Nos Certifications</h2>
+        <p>Notre équipe dispose de nombreuses certifications reconnues dans le domaine de la gestion de projets :</p>
+        <ul class="feature-list">
+          <li>PMP (Project Management Professional)</li>
+          <li>PRINCE2 Practitioner</li>
+          <li>Professional Scrum Master (PSM)</li>
+          <li>SAFe Program Consultant (SPC)</li>
+          <li>ITIL Foundation</li>
+        </ul>
+      </section>
+      <section class="cta-panel">
+        <h2>Un projet à piloter ?</h2>
+        <p>Expliquez-nous vos enjeux : nous vous proposons l'approche de gestion la plus adaptée.</p>
+        <a class="cta-button" href="contact.html?service=gestion-projets#formulaire">Discuter de mon projet</a>
+      </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 @Rchitech - Tous droits réservés.</p>
-    </footer>
+  </div>
+
+  <footer class="site-footer"><img class="footer-logo" src="images/logo.png" alt="@rchitech — De l’analyse au déploiement" width="139" height="36"><p>© 2026 @rchitech · De l’analyse au déploiement</p></footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
