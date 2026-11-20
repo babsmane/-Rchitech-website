@@ -1,5 +1,7 @@
 # Hébergement OVH — architech.sn
 
+> Ce fichier n'est pas servi par le site : le `.htaccess` renvoie une erreur 404 pour les fichiers `.md`.
+
 Ce fichier décrit comment le site vitrine et les applications web partagent l'hébergement OVH, et comment ajouter une nouvelle application.
 
 - **Hébergement** : OVH Web Cloud, offre Pro.
@@ -14,7 +16,10 @@ Ce fichier décrit comment le site vitrine et les applications web partagent l'h
 | `https://architech.sn` | `www/` | Site vitrine (ce dépôt) | Git OVH, branche `main` |
 | `https://www.architech.sn` | `www/` | Redirigé (301) vers `architech.sn` | — |
 | `https://stock.architech.sn` | `apps/stock-portal/` | Front-end Stock Portal (Angular) | Script `deploy-ovh.sh` du dépôt stock-portal |
+| `https://patient.architech.sn` | `apps/patient-portal/` | Front-end Patient Tracking (Angular) | Script `deploy-ovh.sh` du dépôt patient-tracking_portal |
 | `https://<app>.architech.sn` | `apps/<app>/` | Applications suivantes | — |
+
+Les API ne sont pas sur cet hébergement : `api.architech.sn` (Stock Management) et `patient-api.architech.sn` (Patient Tracking) pointent vers le serveur Docker décrit dans le dépôt [architech-infra](https://github.com/babsmane/architech-infra).
 
 > ⚠️ **Ne jamais déposer une application dans `www/`.** Ce dossier est synchronisé avec ce dépôt par le déploiement Git d'OVH : tout fichier qui n'est pas dans le dépôt risque d'être écrasé.
 

@@ -26,6 +26,9 @@ AddDefaultCharset UTF-8
 
     # Fichiers et dossiers cachés (.git, .idea, .env...) : jamais servis
     RewriteRule (^|/)\.(?!well-known/) - [R=404,L]
+
+    # Fichiers du dépôt qui ne font pas partie du site (documentation, scripts...)
+    RewriteRule \.(md|sh|ya?ml|lock|log|dist|example)$ - [R=404,L,NC]
 </IfModule>
 
 # -----------------------------------------------------------------------------
